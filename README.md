@@ -1,5 +1,7 @@
 # Khaled Ellahib — Product Portfolio
 
+**Live portfolio:** https://khaled-portfolio-sandy.vercel.app/
+
 Public portfolio featuring **ADAPT Fitness**, an AI-assisted fitness platform combining personalized training, movement analysis, recovery/readiness, progress tracking, and AURA coaching.
 
 ## What this repo contains
@@ -19,4 +21,4 @@ This repository intentionally excludes the private ADAPT application source code
 
 ## Deployment
 
-This is a static site and can be deployed directly with Vercel, Netlify, or GitHub Pages with no build command required.
+This portfolio is deployed on Vercel as a static site with no build command required.
