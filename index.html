@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Khaled Ellahib — ADAPT Fitness product portfolio and case study." />
+  <title>Khaled Ellahib — ADAPT Fitness Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">A</span><span>ADAPT</span></a>
+    <nav>
+      <a href="#case-study">Case Study</a>
+      <a href="#system">Product</a>
+      <a href="#technical">Technical</a>
+      <a href="#role">My Role</a>
+    </nav>
+    <a class="button ghost" href="ADAPT_Portfolio_Khaled_Ellahib.pdf">PDF</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">KHALED ELLAHIB · PRODUCT BUILDER · AI-ASSISTED FRONT-END DEVELOPER</div>
+        <h1>I built ADAPT to make fitness software understand the person — not just log the workout.</h1>
+        <p class="lead">ADAPT Fitness is a mobile-responsive fitness platform combining personalized training, AI coaching, movement analysis, recovery/readiness, progress tracking and adaptive product logic in one ecosystem.</p>
+        <div class="hero-actions">
+          <a class="button" href="#case-study">Explore the case study</a>
+          <a class="button ghost" href="#contact">Contact</a>
+        </div>
+        <div class="proof-row">
+          <div><strong>React 18 + Vite</strong><span>Front-end platform</span></div>
+          <div><strong>Supabase + Vercel</strong><span>Data, auth & deployment</span></div>
+          <div><strong>MediaPipe</strong><span>Browser movement analysis</span></div>
+          <div><strong>AURA</strong><span>AI chat + voice layer</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal delay-1">
+        <img src="assets/adapt-identity-board.png" alt="ADAPT Fitness visual identity board" />
+        <div class="art-note">Brand system exploration · ADAPT Fitness</div>
+      </div>
+    </section>
+
+    <section class="section compact" id="case-study">
+      <div class="section-head reveal">
+        <div class="eyebrow">01 · THE CASE STUDY</div>
+        <h2>From an idea to a working full-stack fitness product.</h2>
+        <p>I treated ADAPT as a real product: define the problem, shape the experience, build the core system, test it, deploy it, learn from the limitations, and keep iterating.</p>
+      </div>
+      <div class="story-grid">
+        <article class="panel reveal"><span class="num">01</span><h3>The problem</h3><p>Fitness tools often fragment training, recovery, movement quality and coaching into separate experiences. ADAPT was designed around a single connected decision system.</p></article>
+        <article class="panel reveal delay-1"><span class="num">02</span><h3>The product thesis</h3><p>Collect useful evidence, understand the athlete's current state, then change what the platform recommends next — without pretending weak data is certain.</p></article>
+        <article class="panel reveal delay-2"><span class="num">03</span><h3>The build approach</h3><p>Rapid AI-assisted product development paired with React, Supabase, serverless APIs, deterministic testing, browser camera work and continuous iteration.</p></article>
+      </div>
+    </section>
+
+    <section class="section visual-section">
+      <div class="section-head reveal">
+        <div class="eyebrow">PRODUCT DIRECTION</div>
+        <h2>A single ecosystem, not a collection of disconnected features.</h2>
+      </div>
+      <div class="visual-frame reveal">
+        <img src="assets/adapt-ui-ecosystem.png" alt="ADAPT Fitness interface ecosystem concept board" />
+      </div>
+      <p class="caption">Concept UI board illustrating the product direction. It mixes implemented capabilities with planned interface concepts and is presented as design exploration, not a claim that every pictured screen is production-complete.</p>
+    </section>
+
+    <section class="section" id="system">
+      <div class="section-head reveal">
+        <div class="eyebrow">02 · THE PRODUCT SYSTEM</div>
+        <h2>Core modules designed to reinforce each other.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="icon">AI</div><h3>AURA</h3><p>Conversational coaching and voice delivery connected to the rest of the fitness experience.</p><span class="status built">Working capability</span></article>
+        <article class="feature-card reveal delay-1"><div class="icon">BS</div><h3>BodyScan</h3><p>Browser-camera movement capture, pose landmarks, viewpoint checks and confidence-aware movement analysis.</p><span class="status built">Implemented foundation</span></article>
+        <article class="feature-card reveal delay-2"><div class="icon">MV</div><h3>MOVE</h3><p>Yoga, mobility, stretching, breathing and recovery sessions separated from strength-volume analytics.</p><span class="status built">Implemented module</span></article>
+        <article class="feature-card reveal"><div class="icon">RS</div><h3>Recovery & Readiness</h3><p>A user-state layer for translating recovery information into more useful training guidance.</p><span class="status built">Application capability</span></article>
+        <article class="feature-card reveal delay-1"><div class="icon">IS</div><h3>Injury Shield</h3><p>Workload and movement-pattern awareness designed to help constrain training decisions without making medical diagnoses.</p><span class="status partial">Integration evolving</span></article>
+        <article class="feature-card reveal delay-2"><div class="icon">PR</div><h3>Progress</h3><p>Training, movement and consistency data organized around making improvement understandable over time.</p><span class="status built">Core experience</span></article>
+        <article class="feature-card reveal"><div class="icon">SQ</div><h3>Squads & Family</h3><p>Connected-account and group concepts for shared training experiences and household support.</p><span class="status partial">Platform capability</span></article>
+        <article class="feature-card reveal delay-1"><div class="icon">LV</div><h3>ADAPT LIVE</h3><p>Future R&D around synchronized group sessions with participant-specific adaptations and AI-directed continuity.</p><span class="status future">R&D / future</span></article>
+      </div>
+    </section>
+
+    <section class="section scan-section" id="bodyscan">
+      <div class="scan-copy reveal">
+        <div class="eyebrow">03 · BODYSCAN DEEP DIVE</div>
+        <h2>Computer vision with an explicit “don’t guess” philosophy.</h2>
+        <p>BodyScan was developed as a privacy-conscious movement-analysis foundation. The system uses pose landmarks and camera-viewpoint checks to determine what can be measured reliably before turning movement into user-facing feedback.</p>
+        <div class="evidence-list">
+          <div><strong>Observed</strong><span>Directly supported by available movement evidence.</span></div>
+          <div><strong>Calculated</strong><span>Derived from qualifying observed data.</span></div>
+          <div><strong>Inferred</strong><span>Useful interpretation with lower evidentiary authority.</span></div>
+          <div><strong>Not measurable</strong><span>The system abstains when the capture does not support the conclusion.</span></div>
+        </div>
+      </div>
+      <div class="pipeline reveal delay-1">
+        <div class="pipe-item">PHONE CAMERA</div><i>↓</i>
+        <div class="pipe-item">POSE LANDMARKS</div><i>↓</i>
+        <div class="pipe-item">VIEWPOINT + VISIBILITY</div><i>↓</i>
+        <div class="pipe-item">ELIGIBLE METRICS</div><i>↓</i>
+        <div class="pipe-item">PERSONAL BASELINE</div><i>↓</i>
+        <div class="pipe-item accent">TRAINING GUIDANCE</div>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div class="panel large reveal">
+        <div class="eyebrow">PERSON-SPECIFIC LOGIC</div>
+        <h2>Compare the athlete to themselves.</h2>
+        <p>ADAPT’s movement work was designed around qualifying personal baselines rather than treating every user as a generic average. Repeated observations, confidence and deviation rules provide a more personal reference point for later comparisons.</p>
+        <div class="mini-flow"><span>QUALIFY</span><b>→</b><span>BASELINE</span><b>→</b><span>COMPARE</span><b>→</b><span>ADAPT</span></div>
+      </div>
+      <div class="panel large reveal delay-1">
+        <div class="eyebrow">PRIVACY BY DESIGN</div>
+        <h2>Keep the useful signal, not unnecessary footage.</h2>
+        <p>The BodyScan design emphasizes transient camera processing and derived metrics rather than routine retention of raw video. It is movement analysis — not identity recognition, surveillance or medical diagnosis.</p>
+        <div class="privacy-tags"><span>No identity recognition</span><span>No surveillance purpose</span><span>Derived metrics focus</span><span>Abstention supported</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="technical">
+      <div class="section-head reveal">
+        <div class="eyebrow">04 · TECHNICAL EXECUTION</div>
+        <h2>A real product stack behind the concept.</h2>
+        <p>The portfolio is intentionally honest about the difference between design exploration and implemented software. The core application is a React/Vite product with database, authentication, serverless APIs, AI integrations, camera analysis, payments and deployment work.</p>
+      </div>
+      <div class="architecture reveal">
+        <div class="arch-top">ADAPT CLIENT <small>React 18 · Vite · PWA</small></div>
+        <div class="arch-lines">
+          <div class="arch-box"><strong>SUPABASE</strong><span>Postgres · Auth · Storage · RLS</span></div>
+          <div class="arch-box"><strong>SERVERLESS APIs</strong><span>Entitlements · AI chat · speech</span></div>
+          <div class="arch-box"><strong>MEDIAPIPE</strong><span>Browser pose landmarks · BodyScan</span></div>
+          <div class="arch-box"><strong>STRIPE</strong><span>Checkout · portal · tier control</span></div>
+        </div>
+        <div class="arch-bottom">VERCEL DEPLOYMENT · GITHUB WORKFLOW · MOBILE-RESPONSIVE EXPERIENCE</div>
+      </div>
+
+      <div class="tech-grid reveal">
+        <div><strong>Frontend</strong><span>React 18, JavaScript, Vite, HTML, CSS, responsive design</span></div>
+        <div><strong>Backend</strong><span>Supabase Postgres/Auth/Storage, SQL, row-level security</span></div>
+        <div><strong>APIs</strong><span>Node serverless endpoints, REST integrations, account entitlements</span></div>
+        <div><strong>AI</strong><span>Conversational coaching + speech integrations</span></div>
+        <div><strong>Computer Vision</strong><span>Browser camera APIs + MediaPipe pose landmarks</span></div>
+        <div><strong>Delivery</strong><span>Git, GitHub, Vercel, PWA setup, mobile compatibility work</span></div>
+      </div>
+    </section>
+
+    <section class="section testing-section">
+      <div class="testing-copy reveal">
+        <div class="eyebrow">05 · VALIDATION</div>
+        <h2>I didn't stop at “it looks cool.”</h2>
+        <p>ADAPT development includes deterministic test coverage across biomechanics, the BodyScan engine, pose adapters, camera behavior, viewpoint contracts and data-retention logic. The goal is to fail in development rather than in front of the user.</p>
+      </div>
+      <div class="terminal reveal delay-1" aria-label="Example testing terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+        <pre>PASS  viewpoint contract
+PASS  unsupported camera angle abstains
+PASS  required landmark visibility
+PASS  biomechanical bridge mapping
+PASS  movement session classification
+PASS  privacy retention policy
+
+ALL SELECTED TESTS PASSED</pre>
+      </div>
+    </section>
+
+    <section class="section visual-section">
+      <div class="section-head reveal">
+        <div class="eyebrow">06 · EXPERIENCE & BRAND</div>
+        <h2>A dark, focused, high-performance identity.</h2>
+        <p>ADAPT’s visual direction uses deep black/graphite surfaces, electric cyan/blue light, clean high-contrast typography and performance-HUD cues. The identity is designed to feel intelligent and premium without turning the interface into science fiction for its own sake.</p>
+      </div>
+      <div class="gallery reveal">
+        <img src="assets/adapt-app-ui.png" alt="ADAPT app UI ecosystem board" />
+        <img src="assets/aura-storyboard.png" alt="AURA AI and ADAPT brand storyboard" />
+      </div>
+      <p class="caption">Brand and interface boards are visual-direction artifacts. Some values and screens shown are illustrative concept content.</p>
+    </section>
+
+    <section class="section" id="role">
+      <div class="section-head reveal">
+        <div class="eyebrow">07 · MY ROLE</div>
+        <h2>Founder, product lead and hands-on builder.</h2>
+        <p>My value in ADAPT is not one narrow task. I have been responsible for turning a broad vision into an increasingly concrete product: shaping requirements, making product decisions, directing UX, working through implementation, testing the system and documenting what comes next.</p>
+      </div>
+      <div class="role-grid">
+        <div class="role-item reveal"><strong>Product Strategy</strong><p>Defined the product vision, feature system, priorities, tiering and roadmap.</p></div>
+        <div class="role-item reveal delay-1"><strong>UX / UI Direction</strong><p>Developed navigation, product hierarchy, screen concepts and brand direction.</p></div>
+        <div class="role-item reveal delay-2"><strong>AI-Assisted Development</strong><p>Used modern AI tools to accelerate architecture, implementation, debugging and iteration while making product decisions and validating outputs.</p></div>
+        <div class="role-item reveal"><strong>Front-End Development</strong><p>Worked in the React/Vite codebase across application modules, responsive behavior and integrations.</p></div>
+        <div class="role-item reveal delay-1"><strong>Technical Problem Solving</strong><p>Worked through camera constraints, entitlements, auth, APIs, PWA behavior, deployment and data flows.</p></div>
+        <div class="role-item reveal delay-2"><strong>QA & Research</strong><p>Built test-driven checkpoints, investigated movement-analysis limitations and documented technical decisions.</p></div>
+      </div>
+    </section>
+
+    <section class="section status-section">
+      <div class="section-head reveal">
+        <div class="eyebrow">08 · PRODUCT MATURITY</div>
+        <h2>Clear about what exists today and what comes next.</h2>
+      </div>
+      <div class="status-table reveal">
+        <div class="status-row head"><span>Area</span><span>Status</span><span>Portfolio interpretation</span></div>
+        <div class="status-row"><span>Core React/Vite app</span><span class="pill built">Built</span><span>Working software foundation</span></div>
+        <div class="status-row"><span>Supabase auth/data/RLS</span><span class="pill built">Built</span><span>Integrated application backend</span></div>
+        <div class="status-row"><span>AURA chat & voice</span><span class="pill built">Built</span><span>Working assistant functions</span></div>
+        <div class="status-row"><span>BodyScan foundation</span><span class="pill built">Built</span><span>Capture, pose, viewpoint and movement logic</span></div>
+        <div class="status-row"><span>MOVE + recovery/readiness</span><span class="pill built">Built</span><span>Application modules</span></div>
+        <div class="status-row"><span>Injury Shield</span><span class="pill partial">Evolving</span><span>Workload logic exists; integration continues</span></div>
+        <div class="status-row"><span>Cross-device camera experience</span><span class="pill partial">Evolving</span><span>Android/Desktop focus with compatibility/fallback work</span></div>
+        <div class="status-row"><span>ADAPT LIVE / AURA Director</span><span class="pill future">R&D</span><span>Future system concept; not presented as production-complete</span></div>
+        <div class="status-row"><span>Persistent response model</span><span class="pill future">R&D</span><span>Research direction</span></div>
+      </div>
+    </section>
+
+    <section class="section evolution-section">
+      <div class="section-head reveal">
+        <div class="eyebrow">09 · EVOLUTION</div>
+        <h2>The product got smarter as the questions got harder.</h2>
+      </div>
+      <div class="timeline reveal">
+        <div><span>01</span><strong>Fitness app</strong><p>Training, progress and core utility.</p></div>
+        <div><span>02</span><strong>AURA</strong><p>AI coaching and voice layer.</p></div>
+        <div><span>03</span><strong>Recovery + MOVE</strong><p>Broader state and movement support.</p></div>
+        <div><span>04</span><strong>BodyScan</strong><p>Camera-based movement intelligence.</p></div>
+        <div><span>05</span><strong>Evidence awareness</strong><p>Viewpoint, confidence and abstention.</p></div>
+        <div><span>06</span><strong>Adaptive ecosystem</strong><p>Connecting evidence to better next actions.</p></div>
+      </div>
+    </section>
+
+    <section class="section ip-section">
+      <div class="panel reveal">
+        <div class="eyebrow">10 · IP & PRODUCT THINKING</div>
+        <h2>Technical concepts documented for professional IP review.</h2>
+        <p>ADAPT has generated invention-disclosure work around movement evidence, personal adaptation and future synchronized fitness experiences. This public portfolio intentionally stays at a high level and does not disclose confidential control logic, thresholds, claim language or trade-secret details.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <div class="eyebrow">LET'S BUILD SOMETHING USEFUL</div>
+          <h2>Khaled Ellahib</h2>
+          <p>Product Builder · AI-Assisted Front-End Developer · Calgary, Alberta · Open to remote opportunities across Canada.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button" href="mailto:kellahib@yahoo.com">kellahib@yahoo.com</a>
+          <a class="button ghost" href="ADAPT_Portfolio_Khaled_Ellahib.pdf">Download PDF portfolio</a>
+        </div>
+      </div>
+      <p class="fineprint">Selected ADAPT visuals are concept and brand-development artifacts. Product claims are intentionally separated by status to avoid presenting roadmap work as shipped functionality. Code samples available on request subject to privacy and access restrictions.</p>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Khaled Ellahib</span><span>ADAPT Fitness Product Portfolio</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
